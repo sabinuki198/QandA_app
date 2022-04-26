@@ -1,0 +1,23 @@
+<div class="back-ground"> 
+  <div class="back-box2">
+    <div class="QSB">
+      <div class="QSB-top"></div>
+      <div class="QSB-bottom">
+  <%= form_with model: @question, local: true do |form| %>
+      <div class="QSB-title">
+        <%= form.text_field :title, placeholder: "タイトル" %>
+      </div>
+      <div class="QSB-content">
+        <%= form.text_area :question_content, placeholder: "質問内容" %>
+      </div>
+      <div class="QSB-name">
+        <%= form.text_field :user_name, placeholder: "投稿者名" %>
+      </div>
+      <div class="QSB-btn">
+        <%= form.submit 'POST'%>
+      </div>
+  <% end %>
+      </div>
+  </div>
+  </div>
+</div>

@@ -1,0 +1,119 @@
+.back-ground{
+  height: calc(100vh - 65px);
+  width: 100vw;
+  background-color: #F2F2F3;
+}
+
+/**************ここからindexアクション****************/
+
+.back-box{
+  display: flex;
+  justify-content: center;
+  padding-top: 90px;
+}
+
+.QB{
+  width: 700px;
+  height: 100px;
+  border: 25px;
+  background-color: aqua;
+  display: flex;
+}
+
+
+.QB-left{
+  width: 70px;
+  border-radius: 5px 0 0 5px;
+  background-color: #1C3667;
+  padding-top: 20px;
+}
+
+.count{
+  height: 38px;
+  font-size: 26px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.count-text{
+  height: 16px;
+  font-size: 11px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+
+.QB-light{
+  width: calc(700px - 70px);
+  background-color: #FFFFFF;
+  padding: 10px 15px;
+}
+
+.top{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.title{
+  width: 500px;
+  font-size: 14px;
+}
+
+.name{
+  font-size: 12px;
+}
+
+.content{
+  font-size: 12px;
+}
+/************ここからnewアクション*******************/
+
+.back-box2{
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+.QSB{
+  width: 700px;
+  height: 400px;
+}
+
+.QSB-top{
+  height: 45px;
+  border-radius: 5px 5px 0 0;
+  background-color: #1C3667;
+}
+
+.QSB-bottom{
+  height: calc(100% - 45px);
+  border-radius: 0 0 5px 5px;
+  padding: 40px 80px;
+  background-color: #FFFFFF;
+}
+.QSB-title input{
+  height: 30px;
+  width: 520px;
+}
+
+.QSB-content textarea{
+  height: 120px;
+  width: 520px;
+  margin: 15px 0;
+}
+
+.QSB-name input{
+  height: 30px;
+  width: 520px;
+  margin-bottom: 20px;
+}
+
+.QSB-btn input{
+  height: 36px;
+  width: 520px;
+  background-color: #1C3667;
+  font-size: 18px;
+  color: #FFFFFF;
+  border-style: none;
+}

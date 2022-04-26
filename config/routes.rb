@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  root = "questions"
-  get "questions", to: "questions#index"
+  root to: "questions#index"
+  resources :questions, only: [:index, :new, :create]
 end

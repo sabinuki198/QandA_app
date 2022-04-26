@@ -1,8 +1,21 @@
 class QuestionsController < ApplicationController
 
   def index
-    @questions = Qusestion_box.all
+    @questions = Question.all
+  end
+
+  def new
+    @question = Question.new
+  end
+
+  def create
+    Question.create(question_params)
+    redirect_to action: :index
   end
 
 
+  private 
+    def question_params
+    params.require(:question).permit(:title, :question_content, :user_name)
+  end
 end
