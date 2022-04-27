@@ -1,27 +1,33 @@
-  <div class="back-ground"> 
-  <% @questions.each do |question| %>
+<div class="back-ground"> 
     <div class= "back-box">
-    <div class="QB">
-      <div class="QB-left">
-        <div class="count">0</div>
-        <div class="count-text">comments</div>
-      </div>
-    
-      <div class="QB-light">
-        <div class="top">
-          <div class="title">
-            <%= question.title %>
+  <% @questions.each do |question| %>
+    <%# 投稿１件分の表示 %>
+
+      <div class="QB">
+      <%# コメントに関する表示 %>
+        <div class="QB-left">
+          <div class="count">0</div>
+          <div class="count-text">comments</div>
+        </div>
+      <%# 質問本文の表示 %>
+        <div class="QB-light">
+          <div class="top">
+            <div class="title">
+              <%= question.title %>
+            </div>
+            <div class="name">
+              <%= question.user_name %>
+            </div>
           </div>
-          <div class="name">
-            <%= question.user_name %>
+          <div class='question-bottom'>
+            <div class="content">
+              <%= question.question_content %>
+            </div>
           </div>
         </div>
-        <div class="content">
-          <%= question.question_content %>
-        </div>
       </div>
-    </div>
-    </div>
-  <% end %>
+
+    <% end %>
+  </div>
 </div>
 

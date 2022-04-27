@@ -14,15 +14,34 @@
  *= require_self
  */
 
- * {
+ /******************************************** 
+ リセット用
+*********************************************/
+* {
   box-sizing: border-box;
- }
+}
+
+html,
+body,
+ul,
+li,
+h1,
+h2,
+p,
+div {
+  margin: 0;
+  padding: 0;
+}
+
 /************************************ヘッダー****************************/
+header{
+  height: 65px;
+  background-color: #1C3667
+}
+
 .header{
   height: 65px;
-  width: 100vw;
   padding: 0 20px;
-  background-color: #1C3667;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,23 +57,17 @@
 }
 
 .question-btn{
-  height: 100%;
-  width: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 80px;
+  height: 32px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  text-align: center;
 }
 
 .question-btn a{
-  height: 32px;
-  width: 80px;
+  line-height: 32px;
   text-decoration: none;
-  font-size: 16px;
   color: #3A3736;
-  background-color: #FFFFFF;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: 16px;
 }
 /*************ここから各サイトの背景******************/

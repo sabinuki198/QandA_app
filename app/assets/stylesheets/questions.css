@@ -1,41 +1,45 @@
-.back-ground{
-  height: calc(100vh - 65px);
-  width: 100vw;
-  background-color: #F2F2F3;
-}
+
 
 /**************ここからindexアクション****************/
 
+.back-ground{
+  height: calc(100vh - 65px);
+  background-color: #F2F2F3;
+  padding: 90px 0;
+}
+
 .back-box{
-  display: flex;
-  justify-content: center;
-  padding-top: 90px;
+  width: 700px;
+  margin: 0 auto;
 }
 
 .QB{
-  width: 700px;
+  width: 100%;
   height: 100px;
   border: 25px;
-  background-color: aqua;
   display: flex;
 }
 
 
 .QB-left{
   width: 70px;
+  height: 100%;
   border-radius: 5px 0 0 5px;
+  color: #FFFFFF;
   background-color: #1C3667;
-  padding-top: 20px;
 }
 
 .count{
+  width: 70px;
   height: 38px;
+  margin: 20px auto 0;
+  line-height: 38px;
   font-size: 26px;
-  color: #FFFFFF;
   text-align: center;
 }
 
 .count-text{
+  width: 70px;
   height: 16px;
   font-size: 11px;
   color: #FFFFFF;
@@ -44,7 +48,7 @@
 
 
 .QB-light{
-  width: calc(700px - 70px);
+  width: 630px;
   background-color: #FFFFFF;
   padding: 10px 15px;
 }
@@ -52,7 +56,6 @@
 .top{
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
 }
 
 .title{
@@ -62,12 +65,23 @@
 
 .name{
   font-size: 12px;
+  text-align: right;
+}
+
+.question-bottom{
+  margin-top: 10px;
 }
 
 .content{
   font-size: 12px;
 }
 /************ここからnewアクション*******************/
+
+.back-ground2{
+  height: calc(100vh - 65px);
+  background-color: #F2F2F3;
+  padding: 90px 0;
+}
 
 .back-box2{
   display: flex;
